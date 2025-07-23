@@ -137,10 +137,10 @@ namespace NinjaTrader.NinjaScript.Strategies
                 double sellProfitTarget = sellPrice - rangeWidth;
                 
                 // Place buy stop order
-                EnterLongStop(OrderQuantity, buyPrice, "BuyBreakout");
+                EnterLongStopMarket(OrderQuantity, buyPrice, "BuyBreakout");
                 
                 // Place sell stop order
-                EnterShortStop(OrderQuantity, sellPrice, "SellBreakout");
+                EnterShortStopMarket(OrderQuantity, sellPrice, "SellBreakout");
                 
                 ordersPlaced = true;
                 
